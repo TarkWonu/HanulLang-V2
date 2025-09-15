@@ -1,9 +1,9 @@
 import sys
-from runtime import janghanul  
+from hanul.runtime import janghanul  
 
 def main():
     if len(sys.argv) != 2:
-        print("사용법: python main.py <파일.eagen>")
+        print("사용법: hanul <파일.eagen>")
         sys.exit(1)
 
     filename = sys.argv[1]
@@ -16,6 +16,3 @@ def main():
 
     interpreter = janghanul()
     interpreter.compile(code)
-
-if __name__ == "__main__":
-    main()
