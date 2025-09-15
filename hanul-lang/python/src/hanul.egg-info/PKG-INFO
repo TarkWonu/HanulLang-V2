@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: hanul
+Version: 2.1.1
+Description-Content-Type: text/markdown
+
+# 설치하기
+
+```shell
+pip install hanul
+```
+
+# 설치확인하기
+
+```shell
+git clone https://github.com/TarkWonu/HanulLang-V2
+cd HanulLang-V2
+hanul examples/helloworld.eagen
+```
