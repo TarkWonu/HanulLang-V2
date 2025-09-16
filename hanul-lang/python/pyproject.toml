@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hanul"   # pip install hanul
-version = "2.1.1"
+version = "2.2.2"
 readme = "README.md"
 
 [project.scripts]
@@ -12,7 +12,7 @@ hanul = "hanul.cli:main"
 
 [tool.poetry]
 name = "hanul"
-version = "2.1.1"
+version = "2.2.2"
 packages = [
   { include = "hanul", from = "src" }
 ]
