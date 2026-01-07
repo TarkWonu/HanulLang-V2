@@ -14,6 +14,7 @@ class CliCommand(Enum):
     HELP = 'help'
     DOC = 'doc'     # README.md 출력
     KILL = 'kill'   # pip uninstall hanul
+    HELLO = 'hello' # Hello, World! 코드 생성
 
 
 def main():
@@ -71,6 +72,9 @@ def main():
                 case CliCommand.KILL.value:
                     print("hanul kill")
                     print("죽입니다(pip uninstall hanul)")
+                case CliCommand.HELLO.value:
+                    print("hanul hello")
+                    print("Hello, World! 를 출력하는 .eagen 파일을 생성합니다")
         case CliCommand.DOC.value:
             console = Console()
             readme_text = files("hanul").joinpath("README.md").read_text(encoding="utf-8")
@@ -83,7 +87,10 @@ def main():
 
             print(result.stdout)
             print(result.stderr)
-
+        case CliCommand.HELLO.value:
+            file = open("./hello.eagen", "w", encoding="utf-8")
+            file.write("""대체 누가\n에겐 호에에에에에에엥 훌쩍 호에에에에에에에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에엥 21대3 호엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에에엥 21대3 호에엥\n에겐 호에에엥 훌쩍 호에에에에에에에에에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에엥 21대3 호에에에에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에에엥 21대3 호에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에에엥 21대3 호에에에에엥\n에겐 호에에에에에에에엥 훌쩍 호에에에에에에에에에에엥\n에겐 호에에에에에에에에엥 훌쩍 호에에에에에에에에엥\n에겐 호에에에에에에에에에엥 훌쩍 호에엥 \n디미고를 서류로 떨어짐?""")
+            file.close()
         case _:
             print(f"unknown command : {command}")
             sys.exit(1)
