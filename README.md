@@ -155,8 +155,8 @@ hanul examples/helloworld.eagen
 
 
 ## Special Thanks
-<ol>
-  <ul>EGL</ul>
-  <ul>A-Star</ul>
-  <ul>Babo Junyoung</ul>
-</ol>
+
+<ul>EGL</ul>
+<ul>A-Star</ul>
+<ul>Babo Junyoung</ul>
+
