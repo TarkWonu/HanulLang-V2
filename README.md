@@ -155,6 +155,8 @@ hanul examples/helloworld.eagen
 
 
 ## Special Thanks
-손준영
-A-Star
-은교리
+<ol>
+  <ul>EGL</ul>
+  <ul>A-Star</ul>
+  <ul>Babo Junyoung</ul>
+</ol>
