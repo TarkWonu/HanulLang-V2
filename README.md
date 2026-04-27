@@ -152,3 +152,9 @@ hanul examples/helloworld.eagen
 ## 종료
 
 `탈선린` 키워드를 사용하면 프로그램을 종료합니다.
+
+
+## Special Thanks
+손준영
+A-Star
+은교리
