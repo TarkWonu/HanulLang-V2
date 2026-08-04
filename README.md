@@ -6,7 +6,7 @@
 
 ### rust
 ```shell
-git clone https://github.com/TarkWonu/HanulLang-V2
+git clone https://github.com/gmshf/HanulLang-V2
 cd HanulLang-V2
 cargo install --path hanul-lang/rust/
 ```
